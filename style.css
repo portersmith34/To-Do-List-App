@@ -11,3 +11,12 @@
     background: linear-gradient(150deg, #92f086, #1d5231);
     padding: 10px;
 }
+
+.todo-app {
+    width: 100%;
+    max-width: 600px;
+    background: #eee;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 20px;
+}
