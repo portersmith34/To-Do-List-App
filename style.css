@@ -4,3 +4,10 @@
     box-sizing: border-box;
     font-family: 'Arial', sans-serif;
 }
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(150deg, #92f086, #1d5231);
+    padding: 10px;
+}
