@@ -7,6 +7,7 @@
 
 .container {
     width: 100%;
+    min-width: 400px;
     min-height: 100vh;
     background: linear-gradient(150deg, #92f086, #1d5231);
     padding: 10px;
@@ -25,6 +26,7 @@
     color: #000;
     display: flex;
     align-items: center;
+    margin-bottom: 20px;
 }
 
 .input-container {
@@ -44,7 +46,7 @@ input {
     padding: 10px;
 }
 
-button {
+.input-container button {
     border: none;
     background: #2b7ae9;
     color: #fff;
@@ -53,4 +55,50 @@ button {
     font-size: 16px;
     cursor: pointer;
     padding: 10px 30px
+}
+
+ul li {
+    display: flex;
+    list-style: none;
+    font-size: 16px;
+    padding: 10px 8px 10px 20px;
+    user-select: none;
+    cursor: pointer;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+ul li::before {
+    content: '';
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #2b7ae9;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+ul li.checked {
+    color: #555;
+    text-decoration: line-through;
+}
+
+ul li.checked::before {
+    background: #5ad65a;
+}
+
+.delete-btn {
+
+    padding: 10px;
+    line-height: 10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    transition: background 0.3s, color 0.3s;
+    margin-left: auto;
+}
+
+ul li span:hover {
+    background: #ccc;
+    color: #fff;
 }
